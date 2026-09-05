@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "package": "com.gaffix.catnip.client.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "client": [
+    "LibraryMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -11,6 +11,7 @@ different activities often benefit from different control setups.
 - Support for keyboard keys and mouse buttons, including extra side buttons
 - Support for vanilla controls and keybinds added by other mods
 - Persistent profiles that remain available after restarting Minecraft
+- Expanded sound channel capacity for sound-heavy activities such as Vampire Slayer
 
 ## Usage
 
