@@ -1,8 +1,10 @@
 # Catnip
 
-Catnip is a lightweight client-side Fabric mod for quickly switching between
-Minecraft keybind layouts. It is designed with Hypixel SkyBlock in mind, where
-different activities often benefit from different control setups.
+Catnip is a lightweight client-side Fabric quality of life mod created for Hypixel Skyblock.
+Currently its main feature is quickly switching between different keybind layouts. It was designed
+with farming in mind, where different crops often requires different keys being pressed.
+Also expands the sound effects cap so in some situations the game stops cutting off the audio when
+you need to be hearing cues, I'm looking at you Vampire Slayer.
 
 ## Features
 
@@ -11,11 +13,10 @@ different activities often benefit from different control setups.
 - Support for keyboard keys and mouse buttons, including extra side buttons
 - Support for vanilla controls and keybinds added by other mods
 - Persistent profiles that remain available after restarting Minecraft
-- Expanded sound channel capacity for sound-heavy activities such as Vampire Slayer
 
 ## Usage
 
-1. Press `P` to open the Catnip profile menu. You can change this shortcut under
+1. Press `P` to open the profile menu. You can change this shortcut under
    Minecraft's Controls settings.
 2. Select **New profile**, give it a name, and choose **Add binding**.
 3. Pick a control, click its current assignment, and press the new keyboard or
