@@ -12,13 +12,18 @@ import org.slf4j.LoggerFactory;
 
 public class CatnipClient implements ClientModInitializer {
     public static final Logger LOGGER = LoggerFactory.getLogger("catnip");
+    public static final String OPEN_PROFILES_KEY = "key.catnip.open_profiles";
+
+    public static boolean canBeProfiled(KeyMapping mapping) {
+        return !OPEN_PROFILES_KEY.equals(mapping.getName());
+    }
 
     @Override
     public void onInitializeClient() {
         KeyMapping.Category category = KeyMapping.Category.register(
                 Identifier.fromNamespaceAndPath("catnip", "keybinds"));
         KeyMapping openProfiles = KeyMappingHelper.registerKeyMapping(new KeyMapping(
-                "key.catnip.open_profiles", InputConstants.Type.KEYSYM,
+                OPEN_PROFILES_KEY, InputConstants.Type.KEYSYM,
                 InputConstants.KEY_P, category));
 
         ClientTickEvents.END_CLIENT_TICK.register(client -> {

@@ -28,6 +28,7 @@ public final class ProfileManager {
     }
 
     public void load(Minecraft minecraft) {
+        boolean changed = false;
         if (Files.exists(FILE)) {
             try (Reader reader = Files.newBufferedReader(FILE)) {
                 ProfileManager loaded = GSON.fromJson(reader, ProfileManager.class);
@@ -40,20 +41,27 @@ public final class ProfileManager {
             KeybindProfile defaults = captureDefaults(minecraft);
             profiles.removeIf(profile -> "Default".equals(profile.name));
             profiles.addFirst(defaults);
-            save();
+            changed = true;
         }
+        for (KeybindProfile profile : profiles) {
+            changed |= profile.bindings.remove(CatnipClient.OPEN_PROFILES_KEY) != null;
+        }
+        if (changed) save();
     }
 
     private KeybindProfile captureDefaults(Minecraft minecraft) {
         KeybindProfile profile = new KeybindProfile("Default");
         for (KeyMapping mapping : minecraft.options.keyMappings) {
-            profile.bindings.put(mapping.getName(), mapping.getDefaultKey().getName());
+            if (CatnipClient.canBeProfiled(mapping)) {
+                profile.bindings.put(mapping.getName(), mapping.getDefaultKey().getName());
+            }
         }
         return profile;
     }
 
     public void apply(KeybindProfile profile, Minecraft minecraft) {
         for (KeyMapping mapping : minecraft.options.keyMappings) {
+            if (!CatnipClient.canBeProfiled(mapping)) continue;
             String savedKey = profile.bindings.get(mapping.getName());
             if (savedKey != null) mapping.setKey(InputConstants.getKey(savedKey));
         }

@@ -79,6 +79,7 @@ public final class ProfileEditorScreen extends Screen {
 
     private List<KeyMapping> selectedMappings() {
         return java.util.Arrays.stream(minecraft.options.keyMappings)
+                .filter(CatnipClient::canBeProfiled)
                 .filter(mapping -> profile.bindings.containsKey(mapping.getName())).toList();
     }
 

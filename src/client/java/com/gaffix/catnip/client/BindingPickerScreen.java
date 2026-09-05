@@ -23,6 +23,7 @@ public final class BindingPickerScreen extends Screen {
     @Override
     protected void init() {
         List<KeyMapping> available = Arrays.stream(minecraft.options.keyMappings)
+                .filter(CatnipClient::canBeProfiled)
                 .filter(mapping -> !profile.bindings.containsKey(mapping.getName())).toList();
         int start = page * PAGE_SIZE;
         int y = 30;
