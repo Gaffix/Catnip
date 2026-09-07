@@ -8,6 +8,7 @@
     "Gaffix"
   ],
   "license": "CC0-1.0",
+  "icon": "assets/catnip/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [

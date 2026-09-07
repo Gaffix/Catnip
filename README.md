@@ -14,6 +14,7 @@ you need to be hearing cues, I'm looking at you Vampire Slayer.
 - Support for vanilla controls and keybinds added by other mods
 - Persistent profiles that remain available after restarting Minecraft
 - Removes Minecraft's 255-channel software ceiling while respecting the audio device's safe hardware limit
+- Pins downloaded server resource packs after loading so server transfers, disconnects, and kicks cannot unload them
 
 ## Usage
 
