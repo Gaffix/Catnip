@@ -10,7 +10,7 @@ public class Catnip implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        LOGGER.info("Catnip initialized");
+        LOGGER.info("Catnip started meow");
     }
 }
 

@@ -3,7 +3,7 @@
   "id": "catnip",
   "version": "${version}",
   "name": "Catnip",
-  "description": "A Fabric mod for Minecraft 26.2.",
+  "description": "Adds some utilities for Hypixel Skyblock, like keybind preset switching and removing unecessary texture loading.",
   "authors": [
     "Gaffix"
   ],
