@@ -2,9 +2,7 @@
 
 Catnip is a lightweight client-side Fabric quality of life mod created for Hypixel Skyblock.
 Currently its main feature is quickly switching between different keybind layouts. It was designed
-with farming in mind, where different crops often requires different keys being pressed.
-Also expands the sound effects cap so in some situations the game stops cutting off the audio when
-you need to be hearing cues, I'm looking at you Vampire Slayer.
+with farming in mind, where different crops often require different keys to be pressed.
 
 ## Features
 
@@ -13,7 +11,6 @@ you need to be hearing cues, I'm looking at you Vampire Slayer.
 - Support for keyboard keys and mouse buttons, including extra side buttons
 - Support for vanilla controls and keybinds added by other mods
 - Persistent profiles that remain available after restarting Minecraft
-- Removes Minecraft's 255-channel software ceiling while respecting the audio device's safe hardware limit
 - Pins downloaded server resource packs after loading so server transfers, disconnects, and kicks cannot unload them
 
 ## Usage

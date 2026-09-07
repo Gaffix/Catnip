@@ -3,8 +3,7 @@
   "package": "com.gaffix.catnip.client.mixin",
   "compatibilityLevel": "JAVA_25",
   "client": [
-    "DownloadedPackSourceMixin",
-    "LibraryMixin"
+    "DownloadedPackSourceMixin"
   ],
   "injectors": {
     "defaultRequire": 1
