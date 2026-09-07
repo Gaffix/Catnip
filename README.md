@@ -1,28 +1,11 @@
 # Catnip
 
 Catnip is a lightweight client-side Fabric quality of life mod created for Hypixel Skyblock.
-Currently its main feature is quickly switching between different keybind layouts. It was designed
-with farming in mind, where different crops often require different keys to be pressed.
 
 ## Features
 
-- A permanent **Default** profile containing your original controls
-- Custom profiles with only the bindings you want to override
-- Support for keyboard keys and mouse buttons, including extra side buttons
-- Support for vanilla controls and keybinds added by other mods
-- Persistent profiles that remain available after restarting Minecraft
-- Pins downloaded server resource packs after loading so server transfers, disconnects, and kicks cannot unload them
-
-## Usage
-
-1. Press `P` to open the profile menu. You can change this shortcut under
-   Minecraft's Controls settings.
-2. Select **New profile**, give it a name, and choose **Add binding**.
-3. Pick a control, click its current assignment, and press the new keyboard or
-   mouse button.
-4. Return to the profile list and select **Use _profile name_** to apply it.
-
-Profiles are stored in `config/catnip-keybind-profiles.json`.
+- Adds a keybind preset switcher, opened by pressing P. The button can be changed on Minecraft settings.
+- Pins downloaded server resource packs after loading so server transfers, disconnects, and kicks cannot unload them.
 
 ## Requirements
 
